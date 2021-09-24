@@ -91,13 +91,33 @@ using BlazorCRUD.UI.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\CursosPG\CSharp\BlazorCRUD\BlazorCRUD.UI\Pages\Counter.razor"
+#line 19 "C:\CursosPG\CSharp\BlazorCRUD\BlazorCRUD.UI\Pages\Counter.razor"
        
     private int currentCount = 0;
+    private string mensaje = "";
 
     private void IncrementCount()
     {
         currentCount++;
+    }
+
+    private void decrementCount()
+    {
+        currentCount--;
+        if(currentCount < 0) {
+            currentCount = 0;
+            mensaje = "Parece que no puedes restarle más!";
+        }
+    }
+
+    private void resetCount()
+    {
+        currentCount = 0;
+    }
+
+    private void dobleIncrementCount()
+    {
+        currentCount += 2;
     }
 
 #line default
