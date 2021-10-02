@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "BlazorCRUD.Data.Dapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BlazorCRUD.Data.Dapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorCRUD.Data.Dapper.dll": {}
+        }
+      },
+      "BlazorCRUD.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BlazorCRUD.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorCRUD.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BlazorCRUD.Data.Dapper/1.0.0": {
+      "type": "project",
+      "path": "../BlazorCRUD.Data.Dapper/BlazorCRUD.Data.Dapper.csproj",
+      "msbuildProject": "../BlazorCRUD.Data.Dapper/BlazorCRUD.Data.Dapper.csproj"
+    },
+    "BlazorCRUD.Model/1.0.0": {
+      "type": "project",
+      "path": "../BlazorCRUD.Model/BlazorCRUD.Model.csproj",
+      "msbuildProject": "../BlazorCRUD.Model/BlazorCRUD.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "BlazorCRUD.Data.Dapper >= 1.0.0",
+      "BlazorCRUD.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Familia\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\CursosPG\\CSharp\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
+              "projectPath": "C:\\CursosPG\\CSharp\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj"
+            },
+            "C:\\CursosPG\\CSharp\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+              "projectPath": "C:\\CursosPG\\CSharp\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
